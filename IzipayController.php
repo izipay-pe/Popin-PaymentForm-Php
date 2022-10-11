@@ -72,26 +72,28 @@ class IzipayController {
         return $response;
     }
 
-    public function checkHash($arrayPost){
+    public function checkHash(){
         $supportedHashAlgoritm = array("sha256_hmac");
 
-        if(!in_array($arrayPost["hashAlgorithm"], $supportedHashAlgoritm)) return false;
+        if(!in_array($_POST["kr-hash-algorithm"], $supportedHashAlgoritm)) return false;
+        if ($_POST['kr-hash-algorithm'] == "sha256_hmac") {
 
-        if ($arrayPost['hashKey'] == "sha256_hmac") {
             $key = $this->_hmacSha256;
-        } elseif ($arrayPost['hashKey'] == "password") {
+        } elseif ($_POST['kr-hash-algorithm'] == "password") {
             $key = $this->_password;
         } else {
+
             return false; 
 
         }  
         /* on some servers, / can be escaped */
-        $krAnswer = str_replace('\/', '/',  json_encode($arrayPost["clientAnswer"]));
+        $krAnswer = str_replace('\/', '/',  $_POST["kr-answer"]);
+        
+        $hash = $_POST['kr-hash'];
 
-        file_put_contents("k-answer", $krAnswer );
         $calculateHash = hash_hmac("sha256", $krAnswer, $key);
 
-        return ($calculateHash == $arrayPost["hash"]) ;
+        return ($calculateHash == $_POST["kr-hash"]) ;
     }
 
 }
