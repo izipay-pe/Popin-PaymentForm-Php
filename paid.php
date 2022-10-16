@@ -1,6 +1,6 @@
 <?php
 require_once "IzipayController.php";
-require_once "example.keys.php";
+require_once "keys.example.php";
 
 $payment = new IzipayController();
 

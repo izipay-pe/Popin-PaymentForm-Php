@@ -1,0 +1,101 @@
+/**Logo Cabecera**/
+.kr-embedded[kr-popin] div.kr-popin-modal-header .kr-popin-modal-header-image img.kr-header-logo { 
+  content: url(../images/logo.png); 
+  transform: scale(1.15);
+}
+
+
+/**Logo footer**/
+.kr-embedded[kr-popin].kr-help-button-inner-field .kr-popin-modal-footer .kr-whitelabel-logo img { margin-top: -40px; border-radius: 4px !important;
+	content: url(../images/Logo_Izipay_original_RGB.png); max-height: 100% !important}
+
+/** MI-IMAGEN es la imagen que se sube en la siguiente ruta:
+
+Multimedia -> Bliblioteca -> Agregar nueva -> Cargar imagen -> Copiar la URL al portapapeles
+
+Se reemplaza MI-IMAGEN por la URL copiada
+
+**/
+
+/**Color de todos los textos para el plugin
+span{
+  color: rgb(230, 10, 10) !important;
+}
+*/
+
+/** cabecera**/
+.kr-field-wrapper{
+	margin-top: 11px !important;
+}
+
+.kr-popin-shop-name{
+	margin-top: 100px !important;
+}
+
+.kr-embedded[kr-popin], div.kr-popin-modal-header{
+  width: 400px !important;
+	border-top-right-radius: 10px !important;
+  border-top-left-radius: 10px !important;
+	border-color: #fff !important;
+}
+
+.kr-popin-modal-header-background{
+	border-top-right-radius: 10px !important;
+  border-top-left-radius: 10px !important;
+	border-color: #fff !important;
+  background-color: #fff !important;
+}
+
+/**footer **/
+.kr-embedded[kr-popin], div.kr-popin-modal-footer{
+	border-radius: 10px !important;
+}
+
+/**body**/
+.kr-pan{
+  color: #0dfd69;
+  height: 60px !important;
+  border-radius: 4px !important;
+  margin-bottom: -0px !important;
+}
+
+.kr-expiry{
+  width: 180px !important;
+  height: 60px !important;
+  border-radius: 4px !important;
+  margin-bottom: -0px !important;
+}
+
+.kr-security-code{
+  width: 150px  !important;
+  height: 60px !important;
+  border-radius: 4px !important;
+  margin-bottom: -0px !important;
+}
+
+.kr-installment-number{
+  border-radius: 4px !important;
+height: 60px !important;
+  margin-bottom: -0px !important;
+}
+
+.kr-first-installment-delay{
+
+  border-radius: 4px !important;
+  height: 60px !important;
+  margin-bottom: -0px !important;
+}
+
+.kr-embedded .kr-payment-button {
+  color: #ffffff !important;
+    background-color: #00A09D !important;
+    border-radius: 4px !important;
+    height: 60px !important;
+}
+
+.kr-embedded .kr-payment-button:hover {
+  color: #ffffff !important;
+    background-color: #3DD2CE !important;
+    border-radius: 4px !important;
+    height: 60px !important;
+}

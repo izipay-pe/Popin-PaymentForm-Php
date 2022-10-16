@@ -1,6 +1,6 @@
 <?php
 require_once "IzipayController.php";
-require_once "example.keys.php";
+require_once "keys.example.php";
 
 $payment = new IzipayController();
 
@@ -49,7 +49,7 @@ $formToken = $response["answer"]["formToken"];
         transform: scale(1.1);
     }
   </style>
-  
+  <link rel="stylesheet" href="styles/popin.css">
 </head>
 <body>
       <div class="content-checkout">
